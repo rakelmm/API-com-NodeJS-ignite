@@ -1,7 +1,7 @@
 import { Router } from "express";
 
-import SpecificationsRepository from "../modules/cars/repositories/SpecificationsRepository";
-import CreateSpecificationService from "../modules/cars/services/CreateSpecificationService";
+import  SpecificationsRepository  from "../modules/cars/repositories/SpecificationsRepository";
+import  CreateSpecificationService  from "../modules/cars/services/CreateSpecificationService";
 
 const specificationsRoutes = Router();
 
@@ -16,4 +16,4 @@ specificationsRoutes.post("/", (request, response) => {
   return response.status(201).send();
 });
 
-export default specificationsRoutes;
+export { specificationsRoutes };
