@@ -13,4 +13,4 @@ class Specification {
   }
 }
 
-export default Specification;  
+export { Specification };  
