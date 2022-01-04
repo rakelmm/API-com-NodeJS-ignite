@@ -7,9 +7,9 @@ export class CreateRentals1640010676841 implements MigrationInterface {
             new Table({
                 name: "rentals",
                 columns: [
-                    { name: "id", 
-                    type: "uuid", 
-                    isPrimary: true 
+                    {   name: "id", 
+                        type: "uuid", 
+                        isPrimary: true 
                     },
                     {
                         name: "car_id",
