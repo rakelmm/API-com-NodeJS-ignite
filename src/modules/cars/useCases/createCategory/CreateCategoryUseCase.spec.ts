@@ -23,8 +23,25 @@ describe("Create category", () => {
 
     const categoryCreated = await categoriesRepositoryInMemory.findByName(category.name);
 
-
     expect(categoryCreated).toHaveProperty("id");
+  });
+
+  it("should not be able to create a new category with name exists", async () => {
+    const category = {
+      name: "Category test",
+      description: "Category description Test",
+    };
+
+    await createCategoryUseCase.execute({
+      name: category.name,
+      description: category.description,
+    });
+    
+    await expect( createCategoryUseCase.execute({
+        name: category.name,
+        description: category.description,
+      })
+    ).rejects.toEqual(new AppError("Category already existis!"));
   });
 });
 
