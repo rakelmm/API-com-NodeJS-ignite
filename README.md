@@ -1,10 +1,10 @@
-# Cadrastro de carro
+# Cadastro de carro
 
 **RF** => Requisitos funcionais 
 
 **RN** => Regra de negócio
 
-**RNF** => Requesitos não funcionais 
+**RNF** => Requisitos não funcionais 
 ****
 
 **RF**
@@ -37,7 +37,7 @@
 - Não deve ser possível cadastrar uma especificação já existente para o mesmo carro.
 - O usuário responsável pelo cadastro deve ser um usuário administrador.
 
-# Cadatro de imagens do carro
+# Cadastro de imagens do carro
 
 **RF**
 
