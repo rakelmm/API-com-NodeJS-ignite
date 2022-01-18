@@ -42,6 +42,10 @@ class UsersTokensRepository implements IUsersTokensRepository {
 
     return userToken;
   }
+
+  findByUserIdAndRefreshToken(user_id: string, refresh_token: string): Promise<UserTokens> {
+    throw new Error("Method not implemented.");
+  }
 }
 
 export { UsersTokensRepository };
